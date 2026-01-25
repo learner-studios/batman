@@ -1,6 +1,6 @@
     @font-face {
         font-family: 'PLAZAN';
-        src: url('/Batman/PLAZAN.TTF') format('truetype');
+        src: url('PLAZAN.TTF') format('truetype');
     }
 
     * {
