@@ -1,6 +1,6 @@
-    /* * {
+    * {
         box-sizing: border-box;
-    } */
+    }
 
   @font-face {
         font-family: 'PLAZAN';
@@ -42,7 +42,7 @@
 
     h1 {
         padding: 0.7em;
-        font-size: clamp(1.8rem, 8vw, 5rem);
+        font-size: clamp(2.0rem, 8vw, 5rem);
     }
 
     h2 {
