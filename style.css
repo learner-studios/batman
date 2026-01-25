@@ -3,12 +3,7 @@
     src: url('/Batman/PLAZAN.TTF') format('truetype');
 }
 
-.animation {
-    scroll-behavior: smooth; /* Added smooth scrolling */
-    /* Additional styles can be added here */
-}
-
-body{
+body {
     font-family: 'PLAZAN', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15.5px;
     background: linear-gradient(to bottom, #a41d11, #040712);
@@ -20,35 +15,67 @@ body{
     padding: 0;
 }
 
+.biography {
+    padding: 1rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.animation {
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+}
+
+.animation video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 h1 {
     padding: 0.7em;
-    font-size: 5.0rem;
-    font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: clamp(2rem, 8vw, 5rem);
 }
+
 h2 {
     padding: 0.7em;
-    font-size: 2.0em;
+    font-size: clamp(1.3rem, 5vw, 2rem);
 }
+
 time {
     padding: 0.7em;
-    font-size: 1.80em;
+    font-size: clamp(1rem, 4vw, 1.8rem);
     color: whitesmoke;
-    
 }
 
 p {
     padding: 0.7em;
-    font-size: 1.45rem;
+    font-size: clamp(1rem, 3vw, 1.45rem);
     color: rgb(234, 226, 226);
-    max-width: 600px;
+    max-width: 100%;
     text-align: left;
 }
+
 .headshot {
-    width: 590px;
-    /* height: px; */
+    width: 100%;
+    max-width: 590px;
     display: block;
-    margin: 5 auto;
+    margin: 1rem auto;
     border-radius: 10px;
-    justify-content: center;
     box-shadow: 0 4px 8px black;
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+    .biography {
+        padding: 2rem;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    .biography {
+        padding: 3rem;
+    }
 }
